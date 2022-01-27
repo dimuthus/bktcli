@@ -1,0 +1,20 @@
+#!/usr/bin/php
+<?php
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+
+use Bktcli\App;
+use Bktcli\OpenWeatherMapService;
+use Bktcli\GetWeatherForecast;
+use Bktcli\Config;
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+$cmdStart=new GetWeatherForecast();
+$cmdStart->handle();
+

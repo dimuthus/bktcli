@@ -1,0 +1,15 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Bktcli\\": "lib/",
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.4",
+    "phpunit/phpunit": "^9.5",
+    "illuminate/console": "^8.80",
+    "apache/log4php": "2.3.0",
+    "vlucas/phpdotenv": "^5.4"
+  }
+}
